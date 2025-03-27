@@ -10,7 +10,7 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: white transparent;
+  scrollbar-color: transparent transparent;
 }
 
 body {
@@ -53,6 +53,8 @@ body {
     transform-style: preserve-3d;
     perspective: 10000px;
     overflow: hidden;
+    top: 0;
+    left: 0;
 
     &::before {
       content: '';
@@ -115,7 +117,7 @@ body {
   &.triangle-right {
     left: 118px;
     bottom: 0;
-    transform: rotate(-90deg) scaleY(-1);
+    transform: rotate(-90deg) scale(-1);
   }
 
   &.triangle-left {
@@ -126,7 +128,7 @@ body {
 
   &.triangle-frontend {
     bottom: -1px;
-    transform: rotate(90deg) rotateX(-90deg) translate(0px, -61px)
+    transform: rotate(90deg) rotateX(-90deg) translate(0px, -60px)
       translateZ(-116px);
     left: -175px;
   }
