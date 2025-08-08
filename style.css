@@ -11,6 +11,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+  
 }
 
 body {
@@ -21,7 +22,7 @@ body {
   place-content: center;
   background-color: #000;
   transform-style: preserve-3d;
-  perspective: 5000px;
+  perspective: 10000px;
 }
 
 .container {
@@ -111,7 +112,7 @@ body {
 
   &.triangle-top {
     bottom: -118px;
-    transform: scaleY(-1);
+    transform: scale3d(-1, -1, -1) translateZ(118px);
   }
 
   &.triangle-right {
